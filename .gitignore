@@ -1,0 +1,10 @@
+node_modules
+logs/*.log
+dist/
+package-lock.json
+test/*-.test.ts
+test/*-.test.js
+coverage
+package-lock.json
+test_dist/
+.env

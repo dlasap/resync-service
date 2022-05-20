@@ -1,0 +1,23 @@
+{
+  "name": "search_sbc_api_production",
+  "script": "dist/main.js",
+  "watch": [
+    "dist/"
+  ],
+  "ignore_watch": [
+    "src/",
+    "package.json"
+  ],
+  "instances": 1,
+  "error_file": "logs/production.error.log",
+  "out_file": "logs/production.out.log",
+  "env": {
+    "PORT": "5300",
+    "BASIC_AUTH_USERNAME": "sbc",
+    "BASIC_AUTH_PASSWORD": "F0nch3rt0",
+    "ELASTIC_SEARCH_HTTP_HOST": "http://localhost:8081",
+    "SCHEMA_VERSION": "v1",
+    "APP_ENVIRONMENT": "production",
+    "ELASTIC_TIMEOUT": "300000"
+  }
+}
